@@ -7,12 +7,12 @@ import Navbar from "./Navbar";
 import Header from "./Header";
 import Categories from "./Categories";
 import LatestJobs from "./LatestJobs";
-import TestimonialSection from "./TestiMonials";
 import Download from "./Download";
 import TopRecriters from "./TopRecriters";
 import Faq from "./Faq";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Testimonials from "./Testimonials";
 
 const Home = () => {
   const { user } = useSelector((store) => store.auth);
@@ -69,7 +69,7 @@ const Home = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
       >
-        <TestimonialSection />
+        <Testimonials />
       </motion.div>
 
       <motion.div
